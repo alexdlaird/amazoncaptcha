@@ -58,7 +58,7 @@ class AmazonCaptchaCollector(object):
 
         """
 
-        return captcha_page.text.split('<img src="')[2].split('">')[0]
+        return captcha_page.text.split('<img src="')[2].split('" alt')[0]
 
     def _extract_captcha_id(self, captcha_link):
         """
