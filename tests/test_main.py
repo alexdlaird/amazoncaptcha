@@ -5,7 +5,6 @@ from amazoncaptcha import AmazonCaptcha, AmazonCaptchaCollector, ContentTypeErro
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 import unittest
-import sys
 import os
 
 #--------------------------------------------------------------------------------------------------------------
