@@ -27,7 +27,7 @@ test: install
 	@( \
 		source $(PROJECT_VENV)/bin/activate; \
 		python -m pip install -r ext/requirements-dev.txt; \
-		coverage run -m unittest discover -s tests; \
+		coverage run -m unittest discover -s tests && coverage report && coverage xml && coverage html; \
 	)
 
 docs: install
