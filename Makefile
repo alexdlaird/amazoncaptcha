@@ -26,7 +26,7 @@ clean: nopyc
 test: install
 	@( \
 		source $(PROJECT_VENV)/bin/activate; \
-		python -m pip install -r ext/requirements-dev.txt; \
+		python -m pip install -r ext/requirements-dev.txt -r docs/requirements-docs.txt; \
 		coverage run -m unittest discover -s tests && coverage report && coverage xml && coverage html; \
 	)
 
